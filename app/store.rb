@@ -2,7 +2,14 @@ class Store
   include Inesita::Store
 
   def initialize
-    @store = {}
+    keychain = Keychain.new
+
+    @store = {
+      keychain: {
+        address: keychain.address,
+      },
+      keychain_address: keychain.address,
+    }
   end
 
   def set(key, value)

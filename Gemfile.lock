@@ -1,8 +1,11 @@
-GEM
-  remote: https://rubygems.org/
-  remote: https://rails-assets.org/
+GIT
+  remote: git://github.com/makevoid/inesita.git
+  revision: 68d9484d88445e88d804048d1b74e58fb574378c
   specs:
-    hike (1.2.3)
+
+PATH
+  remote: ~/apps/inesita
+  specs:
     inesita (0.2.3)
       opal (~> 0.8)
       opal-virtual-dom (~> 0.1.0)
@@ -10,6 +13,12 @@ GEM
       sass (~> 3.4)
       slim (~> 3.0)
       thor (~> 0.19)
+
+GEM
+  remote: https://rubygems.org/
+  remote: https://rails-assets.org/
+  specs:
+    hike (1.2.3)
     opal (0.8.1)
       hike (~> 1.2)
       sourcemap (~> 0.1.0)
@@ -42,7 +51,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  inesita (~> 0.2.0)
+  inesita!
   opal-browser (~> 0.2)
   rails-assets-bootstrap!
   rails-assets-virtual-dom!

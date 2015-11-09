@@ -4,7 +4,9 @@ class Layout
   def render
     div class: 'container' do
       component NavBar
-      component outlet
+      div class: 'content' do
+        component outlet
+      end
     end
   end
 end

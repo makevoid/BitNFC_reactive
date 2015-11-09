@@ -8,6 +8,13 @@ require 'router'
 require 'store'
 require_tree './components'
 
+require 'helpers/main'
+include MainHelpers
+
+require 'models/privatekey'
+require 'models/keychain'
+
+
 $document.ready do
   App = Inesita::Application.new(
     router: Router,

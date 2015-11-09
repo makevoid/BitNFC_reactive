@@ -1,0 +1,31 @@
+{
+  "name": "bitnfc-reactive",
+  "authors": [
+    "Francesco 'makevoid' Canessa <makevoid@gmail.com>"
+  ],
+  "description": "BitNFC fork in inesita",
+  "main": "public/application.js",
+  "moduleType": [
+    "es6"
+  ],
+  "keywords": [
+    "bitnfc",
+    "blockchain",
+    "bitcoin",
+    "wallet",
+    "keychain",
+    "account"
+  ],
+  "license": "unlicense",
+  "homepage": "http://github.com/makevoid/BitNFC_reactive",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bitcore-lib": "~0.13.9"
+  }
+}
