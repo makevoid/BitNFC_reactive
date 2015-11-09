@@ -6,6 +6,8 @@ class Account
   end
 
   def render
+    delete_previous_qr
+
     div class: "account" do
       h1 {"My account"}
       div do

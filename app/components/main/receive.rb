@@ -14,8 +14,12 @@ class Receive
   end
 
   def render
+    delete_previous_qr
+
     div class: "receive" do
-      address
+      component QRCode, props: { address: address }
+      h3 {address}
+      p {"(receiving address)"}
     end
   end
 
