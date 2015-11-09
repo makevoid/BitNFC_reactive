@@ -27,7 +27,6 @@ class QRCode
   def generate_qr
     qr = QR.new text: props[:address], selector: ".address_qr"
     qr.generate
-    log "asd"
   end
 
   def render
@@ -37,6 +36,6 @@ class QRCode
   end
 
   def after_render
-    `setTimeout(function(){ self.$generate_qr() }, 0)`
+    generate_qr
   end
 end

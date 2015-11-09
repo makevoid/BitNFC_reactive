@@ -13,6 +13,8 @@ include MainHelpers
 
 require 'models/privatekey'
 require 'models/keychain'
+require 'models/hd_privatekey'
+require 'models/hd_keychain'
 
 
 $document.ready do

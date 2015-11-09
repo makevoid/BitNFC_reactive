@@ -2,13 +2,13 @@ class Store
   include Inesita::Store
 
   def initialize
-    keychain = Keychain.new
+    keychain = HDKeychain.new
 
     @store = {
-      keychain: {
-        address: keychain.address,
-      },
-      keychain_address: keychain.address,
+      keychain:              keychain,
+      keychain_address:      keychain.address,
+      last_key_used:         1,
+      last_keychain_address: keychain.address(1),
     }
   end
 
